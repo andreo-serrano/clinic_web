@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qskv8r_++za(ci-4b-r^!kwdiqvq8!jd+s2t@-1flwl3+(4#g$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['clinic-web-7.onrender.com']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'Doctorweb.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
